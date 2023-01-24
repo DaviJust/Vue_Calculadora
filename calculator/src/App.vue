@@ -21,7 +21,6 @@ export default {
 
 *{
     font-family: "RobotoMono", monospace;
-    background-color:linear-gradient(#e66465, #9198e5);
 }
 body{
     margin:0;
@@ -36,7 +35,7 @@ body{
     text-align: center;
 
     color: #fff;
-    background: linear-gradient(#e66465, #9198e5);;
+    background: linear-gradient(#403838, #9198e5);;
 }
 
 </style>

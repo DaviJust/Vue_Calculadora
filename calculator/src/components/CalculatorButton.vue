@@ -1,5 +1,6 @@
 <template>
   <button class="button"
+  @click="$emit('onCalculatorButtonClick', label)"
   :class="{double,triple,operation}">
   {{ label }}  
   </button>
@@ -43,6 +44,6 @@ export default {
     color: #fff;
 }
 .button.operation:active {
-    background-color: #fa8231cc;
+    background-color: #7c421bcc;
 }
 </style>
