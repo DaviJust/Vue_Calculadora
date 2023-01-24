@@ -1,7 +1,7 @@
 <template>
   <button class="button"
   @click="$emit('onCalculatorButtonClick', label)"
-  :class="{double,triple,operation}">
+  :class="{double,triple,quatro,operation}">
   {{ label }}  
   </button>
 </template>
@@ -13,6 +13,7 @@ export default {
     operation:{type: Boolean},
     doble: {type: Boolean},
     triple: {type : Boolean},
+    quatro: {type : Boolean},
   }
 }
 </script>
@@ -34,10 +35,14 @@ export default {
     background-color: #ccc;
 }
 .button.double {
-    grid-column: span 2;
+    grid-column: span 2 ;
 }
 .button.triple {
     grid-column: span 3;
+}
+
+.button.quatro {
+    grid-column: span 2;
 }
 .button.operation {
     background-color: #fa8231;
